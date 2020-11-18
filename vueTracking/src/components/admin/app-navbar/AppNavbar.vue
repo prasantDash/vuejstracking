@@ -28,7 +28,9 @@ export default {
     },
   },
   data () {
-    return {}
+    return {
+      userName: '',
+    }
   },
   computed: {
     isTopBarProxy: {

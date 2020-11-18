@@ -36,10 +36,6 @@ export default {
     ProfileDropdown,
   },
   props: {
-    userName: {
-      type: String,
-      default: '',
-    },
     isTopBar: {
       type: Boolean,
       default: false,
