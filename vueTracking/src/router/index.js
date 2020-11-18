@@ -75,10 +75,10 @@ export default new Router({
       path: '/admin',
       component: AppLayout,
       beforeEnter: (to, from, next) => {
-        if(localStorage.loginflag == 1){
-          next();
-        }else{
-          next("/auth/login");
+        if (localStorage.loginflag === 1) {
+          next()
+        } else {
+          next('/auth/login')
         }
       },
       children: [
