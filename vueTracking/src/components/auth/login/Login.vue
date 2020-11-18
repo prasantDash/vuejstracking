@@ -39,6 +39,7 @@ export default {
         console.log(response);
         if(response.data.Status == 1){         
           localStorage.setItem('tocken', response.data.tocken);
+          localStorage.setItem('loginUserName', response.data.username);
           localStorage.setItem('loginflag', 1);
 
           this.$router.push({ name: 'dashboard' })

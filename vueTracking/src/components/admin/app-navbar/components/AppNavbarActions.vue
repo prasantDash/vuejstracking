@@ -9,7 +9,7 @@
     />
     <language-dropdown class="app-navbar-actions__item"/>
     <profile-dropdown class="app-navbar-actions__item app-navbar-actions__item--profile">
-      <span>{{userName}}</span>
+      <span>{{loginUserName}}</span>
     </profile-dropdown>
   </div>
 </template>
@@ -46,6 +46,11 @@ export default {
     },
   },
   computed: {
+    loginUserName: {
+      get () {
+        return localStorage.getItem('loginUserName')
+      },
+    },
     isTopBarProxy: {
       get () {
         return this.isTopBar
